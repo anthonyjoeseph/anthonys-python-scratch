@@ -1,0 +1,4 @@
+funcy==2.0.*
+simplejson==3.17.*
+asyncpg==0.27.*
+asyncpg-stubs==0.27.*

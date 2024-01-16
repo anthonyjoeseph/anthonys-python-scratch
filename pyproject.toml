@@ -1,0 +1,17 @@
+[tool.pytest.ini_options]
+log_cli = true
+log_cli_level = "DEBUG"
+asyncio_mode = "auto"
+env = [
+    "POWERTOOLS_TRACE_DISABLED=1",
+    "POWERTOOLS_METRICS_NAMESPACE=Example",
+    "LOG_LEVEL=DEBUG"
+]
+
+[tool.pyright]
+exclude = ["**/node_modules",
+    "**/__pycache__",
+    "vendor/"
+]
+reportUnusedImport = true
+typeCheckingMode = strict
